@@ -23,7 +23,7 @@ function addToCart (item) {
 //console.log(addToCart(bread)); // this is for the return the key.
 
 //this is for if there is no return.
-addToCart(milk); 
+addToCart(milk + apple); 
 console.log(cartTotal);
 // it logged
 
@@ -33,5 +33,7 @@ function removeFromCart (item) {
     cartTotal = cartTotal - item;
 }
 
-removeFromCart(banana); 
+removeFromCart(apple); 
 console.log(cartTotal);
+
+//correct; (milk + apple ) & (-apple)
