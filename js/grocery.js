@@ -26,3 +26,12 @@ function addToCart (item) {
 addToCart(milk); 
 console.log(cartTotal);
 // it logged
+
+//second function
+
+function removeFromCart (item) {
+    cartTotal = cartTotal - item;
+}
+
+removeFromCart(banana); 
+console.log(cartTotal);
