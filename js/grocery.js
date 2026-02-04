@@ -16,8 +16,13 @@ function addToCart (item) {
     //no return function
     cartTotal = item  + cartTotal; //doesn't matter what item b/c we have values
     //console.log(addToCart(banana)), leads to undefined because there's no return keyword. log cartTotal..
+    //make a return statement
+   // return item + cartTotal;
 };
 
-addToCart(banana + apple + milk *3);
-console.log(cartTotal);
+console.log(addToCart(bread)); // this is for the return the key.
+
+//this is for if there is no return.
+//addToCart(banana + apple + milk *3); 
+//console.log(cartTotal);
 // it logged
