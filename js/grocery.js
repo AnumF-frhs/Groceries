@@ -20,9 +20,9 @@ function addToCart (item) {
    // return item + cartTotal;
 };
 
-console.log(addToCart(bread)); // this is for the return the key.
+//console.log(addToCart(bread)); // this is for the return the key.
 
 //this is for if there is no return.
-//addToCart(banana + apple + milk *3); 
-//console.log(cartTotal);
+addToCart(milk); 
+console.log(cartTotal);
 // it logged
