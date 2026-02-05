@@ -1,4 +1,4 @@
-alert('meow');
+//alert('meow');
 
 //stuffzies
 
@@ -8,8 +8,12 @@ var bread = 2.49;
 var milk = 3.49;
 var eggs = 4.25;
 
+//testing discounted milk price (10%):
+
+
 
 var cartTotal = 0; // didn't put anything in cart
+var itemSale = 0; //discount item
 
 
 function addToCart (item) {
@@ -23,7 +27,7 @@ function addToCart (item) {
 //console.log(addToCart(bread)); // this is for the return the key.
 
 //this is for if there is no return.
-addToCart(milk + apple); 
+addToCart(banana*5 + eggs + bread+ milk + apple*2); 
 console.log(cartTotal);
 // it logged
 
@@ -34,6 +38,25 @@ function removeFromCart (item) {
 }
 
 removeFromCart(apple); 
-console.log(cartTotal);
+//console.log(cartTotal);
 
 //correct; (milk + apple ) & (-apple)
+
+function plusDiscount(item) {
+
+    sale = item *.10;
+}
+
+plusDiscount(banana);
+console.log(sale);
+
+//console.log(plusDiscount);
+
+function calcTotal (item) {
+    cartTotal = cartTotal - item + (item - sale);
+}
+
+calcTotal(banana);
+console.log(cartTotal.toFixed(2));
+
+
