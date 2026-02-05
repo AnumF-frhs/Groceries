@@ -38,16 +38,16 @@ function removeFromCart (item) {
 }
 
 removeFromCart(apple); 
-//console.log(cartTotal);
+console.log(cartTotal);
 
 //correct; (milk + apple ) & (-apple)
 
 function plusDiscount(item) {
 
-    sale = item *.10;
+    sale = item*.10;
 }
 
-plusDiscount(banana);
+plusDiscount(milk);
 console.log(sale);
 
 //console.log(plusDiscount);
@@ -56,7 +56,7 @@ function calcTotal (item) {
     cartTotal = cartTotal - item + (item - sale);
 }
 
-calcTotal(banana);
+calcTotal(cartTotal);
 console.log(cartTotal.toFixed(2));
 
 
